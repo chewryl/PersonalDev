@@ -7,8 +7,8 @@
 <style>
 html {
   font-family: 'Red Hat Text', sans-serif;
-  color: #BFBFBF;
-  font-size: 1.25rem;
+  color: #bfbfbf;
+  font-size: 1.2rem;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -24,17 +24,18 @@ html {
   margin: 0;
 }
 
-.button--green {
+.button--purple {
   display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #CEAFFF;
-  color: #CEAFFF;
+  border-radius: 5px;
+  border: 2px solid #ceafff;
+  color: #ceafff;
   text-decoration: none;
-  padding: 10px 25px;
+  padding: 5px 15px;
 }
 
-.button--green:hover {
-  color: #CEAFFF;
-  background-color: #ceafff5d;
+.button--purple:hover {
+  font-weight: bold;
+  color: #262626;
+  background-color: #ceafff;
 }
 </style>
