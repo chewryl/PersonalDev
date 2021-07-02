@@ -6,13 +6,25 @@
       rel="noopener noreferrer"
       target="_blank"
     >
+      <inline-svg
+        v-if="iconPath"
+        :src="`iconPath`"
+        width="80"
+        height="80"
+        fill="true"
+      />
       {{ text }}
     </a>
   </div>
 </template>
 <script>
+import InlineSvg from 'vue-inline-svg'
+
 export default {
   name: 'PdButton',
+  components: {
+    InlineSvg
+  },
   props: {
     iconPath: {
       required: false,

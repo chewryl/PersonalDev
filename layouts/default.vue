@@ -35,7 +35,7 @@ html {
 
 .button--purple:hover {
   font-weight: bold;
-  color: #262626;
+  color: #222222;
   background-color: #ceafff;
 }
 </style>

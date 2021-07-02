@@ -39,7 +39,7 @@
   min-height: 100vh;
   min-width: 100vw;
   align-items: center;
-  background-color: #262626;
+  background-color: #222222;
 }
 
 .title {
