@@ -1,33 +1,37 @@
 <template>
-  <div class="container grid grid-cols-3">
-    <div class="col-span-2 pl-32">
+  <div class="container grid grid-cols-2">
+    <div class="col-span-1 pl-44">
       <h1 class="title">
         <span class="text-purple"> Cheryl </span>
         Mataitini
       </h1>
-      <div class="pt-10">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, est
-        ipsam. Repellat nulla ipsum quia minus aliquam dicta molestias
-        repellendus illum, sequi velit veniam quisquam id, assumenda sunt alias
-        adipisci!
+      <div class="pt-10 space-y-4">
+        <p>
+          Software Engineer based in the UK. Focused on C# .NET development, the
+          Web & client-side frameworks. Check out my GitHub profile to see what
+          projects I am working on.
+        </p>
+        <p>
+          Outside of work, I enjoy spending time on music. At the moment I am
+          learning to play the classical guitar.
+        </p>
       </div>
       <div class="flex gap-1 pt-10">
         <pd-button
-          href="https://nuxtjs.org/"
-          button-class="button--purple"
+          href="mailto:cherylmataitini@gmail.com"
           text="Contact"
-          icon-path="/"
+          icon-path="GitHub.svg"
         />
-        <pd-button
-          href="https://nuxtjs.org/"
-          button-class="button--purple"
-          text="GitHub"
-          icon-path="/"
-        />
+        <pd-button href="https://github.com/chewryl/" text="GitHub" />
       </div>
     </div>
   </div>
 </template>
+<script>
+export default {
+  name: 'PersonalDev'
+}
+</script>
 <style>
 /* Sample `apply` at-rules with Tailwind CSS
 .container {
@@ -46,9 +50,8 @@
   font-family: 'Pacifico', cursive;
   display: block;
   font-weight: 300;
-  font-size: 100px;
+  font-size: 5.5rem;
   color: #bfbfbf;
-  letter-spacing: 1px;
 }
 
 .text-purple {

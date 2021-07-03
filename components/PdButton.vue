@@ -6,14 +6,16 @@
       rel="noopener noreferrer"
       target="_blank"
     >
-      <inline-svg
-        v-if="iconPath"
-        :src="`iconPath`"
-        width="80"
-        height="80"
-        fill="true"
-      />
-      {{ text }}
+      <span class="flex">
+        <inline-svg
+          v-if="iconPath"
+          :src="require(`../assets/icons/${iconPath}`)"
+          width="80"
+          height="80"
+          fill="true"
+        />
+        <div>{{ text }}</div>
+      </span>
     </a>
   </div>
 </template>
@@ -28,8 +30,7 @@ export default {
   props: {
     iconPath: {
       required: false,
-      type: String,
-      default: '/'
+      type: String
     },
     href: {
       required: true,
