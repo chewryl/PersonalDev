@@ -6,13 +6,13 @@
       rel="noopener noreferrer"
       target="_blank"
     >
-      <span class="flex">
+      <span class="flex space-x-1">
         <inline-svg
           v-if="iconPath"
           :src="require(`../assets/icons/${iconPath}`)"
-          width="80"
-          height="80"
-          fill="true"
+          width="24"
+          height="24"
+          fill="#ceafff"
         />
         <div>{{ text }}</div>
       </span>
