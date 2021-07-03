@@ -2,7 +2,7 @@
   <div class="container grid grid-cols-3">
     <div class="col-span-2 pl-44">
       <h1 class="title">
-        <span class="text-purple"> Cheryl </span>
+        <span class="text-lilac"> Cheryl </span>
         Mataitini
       </h1>
       <div class="pt-10 space-y-4">
@@ -47,7 +47,7 @@ export default {
   min-height: 100vh;
   min-width: 100vw;
   align-items: center;
-  background-color: #1f1f20;
+  background-color: var(--dark);
 }
 
 .title {
@@ -58,7 +58,7 @@ export default {
   color: #bfbfbf;
 }
 
-.text-purple {
+.text-lilac {
   color: var(--neon-lilac);
 }
 

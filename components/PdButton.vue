@@ -58,7 +58,7 @@ export default {
 
 a:hover .icon,
 a:hover {
-  fill: #1f1f20;
-  color: #1f1f20;
+  fill: var(--dark);
+  color: var(--dark);
 }
 </style>

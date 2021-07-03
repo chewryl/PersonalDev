@@ -7,7 +7,7 @@
 <style>
 html {
   font-family: 'Red Hat Text', sans-serif;
-  color: #bfbfbf;
+  color: var(--off-white);
   font-size: 1.3rem;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -19,6 +19,8 @@ html {
 
 :root {
   --neon-lilac: #ceafff;
+  --dark: #1f1f20;
+  --off-white: #bfbfbf;
 }
 
 *,
@@ -39,7 +41,7 @@ html {
 
 .button--neon-lilac:hover {
   font-weight: bold;
-  color: #1f1f20;
+  color: var(--dark);
   background-color: var(--neon-lilac);
 }
 </style>
