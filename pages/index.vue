@@ -1,6 +1,6 @@
 <template>
-  <div class="container grid grid-cols-2">
-    <div class="col-span-1 pl-44">
+  <div class="container grid grid-cols-3">
+    <div class="col-span-2 pl-44">
       <h1 class="title">
         <span class="text-purple"> Cheryl </span>
         Mataitini
@@ -8,8 +8,8 @@
       <div class="pt-10 space-y-4">
         <p>
           Software Engineer based in the UK. Focused on C# .NET development, the
-          Web & client-side frameworks. Check out my GitHub profile to see what
-          projects I am working on.
+          Web & client-side frameworks. <br />Check out my GitHub profile to see
+          what projects I am working on.
         </p>
         <p>
           Outside of work, I enjoy spending time on music. At the moment I am
@@ -20,9 +20,13 @@
         <pd-button
           href="mailto:cherylmataitini@gmail.com"
           text="Contact"
+          icon-path="Email.svg"
+        />
+        <pd-button
+          href="https://github.com/chewryl/"
+          text="GitHub"
           icon-path="GitHub.svg"
         />
-        <pd-button href="https://github.com/chewryl/" text="GitHub" />
       </div>
     </div>
   </div>
@@ -43,19 +47,19 @@ export default {
   min-height: 100vh;
   min-width: 100vw;
   align-items: center;
-  background-color: #222222;
+  background-color: #1f1f20;
 }
 
 .title {
   font-family: 'Pacifico', cursive;
   display: block;
   font-weight: 300;
-  font-size: 5.5rem;
+  font-size: 5.3rem;
   color: #bfbfbf;
 }
 
 .text-purple {
-  color: #ceafff;
+  color: var(--neon-lilac);
 }
 
 .subtitle {

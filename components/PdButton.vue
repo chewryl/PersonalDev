@@ -6,13 +6,13 @@
       rel="noopener noreferrer"
       target="_blank"
     >
-      <span class="flex space-x-1">
+      <span class="flex space-x-1 items-center">
         <inline-svg
           v-if="iconPath"
           :src="require(`../assets/icons/${iconPath}`)"
-          width="24"
-          height="24"
-          fill="#ceafff"
+          class="icon"
+          width="22"
+          height="22"
         />
         <div>{{ text }}</div>
       </span>
@@ -39,7 +39,7 @@ export default {
     },
     buttonClass: {
       required: false,
-      default: 'button--purple',
+      default: 'button--neon-lilac',
       type: String
     },
     text: {
@@ -49,3 +49,16 @@ export default {
   }
 }
 </script>
+<style scoped>
+.icon {
+  fill: var(--neon-lilac);
+  width: 22;
+  height: 22;
+}
+
+a:hover .icon,
+a:hover {
+  fill: #1f1f20;
+  color: #1f1f20;
+}
+</style>
