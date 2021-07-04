@@ -8,7 +8,7 @@
 html {
   font-family: 'Red Hat Text', sans-serif;
   color: var(--off-white);
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -33,7 +33,7 @@ html {
 .button--neon-lilac {
   display: inline-block;
   border-radius: 5px;
-  border: 2px solid var(--neon-lilac);
+  border: 1px solid var(--neon-lilac);
   color: var(--neon-lilac);
   text-decoration: none;
   padding: 5px 15px;
