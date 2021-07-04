@@ -39,7 +39,7 @@ export default {
     },
     buttonClass: {
       required: false,
-      default: 'button--neon-lilac',
+      default: 'button--neon-fuchsia',
       type: String
     },
     text: {
@@ -51,7 +51,7 @@ export default {
 </script>
 <style scoped>
 .icon {
-  fill: var(--neon-lilac);
+  fill: var(--neon-fuchsia);
   width: 22;
   height: 22;
 }

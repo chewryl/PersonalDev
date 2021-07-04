@@ -12,13 +12,13 @@
         </div>
         <div class="pt-10 space-y-4">
           <p>
-            Software Engineer based in the UK. Focused on C# .NET development,
-            the Web & client-side frameworks. Check out my GitHub profile to see
-            what projects I am working on.
+            Software Engineer based in the UK. Focused on C# .NET / ASP.NET Core
+            development & client-side frameworks. Check out my GitHub profile to
+            see what projects I am working on.
           </p>
           <p>
-            Outside of work, I enjoy spending time on music. At the moment I am
-            learning to play the classical guitar.
+            In my free time, I enjoy spending time on music & clay work. At the
+            moment I am learning to play the classical guitar.
           </p>
         </div>
         <div class="flex gap-1 pt-10">
@@ -64,7 +64,7 @@ export default {
 }
 
 .text-lilac {
-  color: var(--neon-lilac);
+  color: var(--neon-fuchsia);
 }
 
 .subtitle {
@@ -76,7 +76,7 @@ export default {
 }
 
 .me-img {
-  max-width: 6.3rem;
-  height: 6.3rem;
+  max-width: 6rem;
+  height: 6rem;
 }
 </style>

@@ -18,8 +18,8 @@ html {
 }
 
 :root {
-  --neon-lilac: #ceafff;
-  --dark: #1f1f20;
+  --neon-fuchsia: #ca9be0;
+  --dark: #1d1d1d;
   --off-white: #bfbfbf;
 }
 
@@ -30,18 +30,18 @@ html {
   margin: 0;
 }
 
-.button--neon-lilac {
+.button--neon-fuchsia {
   display: inline-block;
-  border-radius: 5px;
-  border: 1px solid var(--neon-lilac);
-  color: var(--neon-lilac);
+  border-radius: 20px;
+  border: 1px solid var(--neon-fuchsia);
+  color: var(--neon-fuchsia);
   text-decoration: none;
   padding: 5px 15px;
 }
 
-.button--neon-lilac:hover {
+.button--neon-fuchsia:hover {
   font-weight: bold;
   color: var(--dark);
-  background-color: var(--neon-lilac);
+  background-color: var(--neon-fuchsia);
 }
 </style>
