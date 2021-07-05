@@ -14,6 +14,8 @@ module.exports = {
   plugins: [
   ],
   "rules": {
-    "quotes": [2, "single", { "avoidEscape": true }]
+    "quotes": [2, "single", { "avoidEscape": true }],
+    "indent": [2, "tab"],
+    "no-tabs": 0
   }
 }

@@ -1,7 +1,9 @@
 <template>
   <div class="container">
     <div class="max-w-3xl min-h-screen px-4 py-24 mx-auto">
-      <div class="text-right pb-10">togglePlaceholder</div>
+      <div class="items-right pb-10">
+        <pd-theme-toggle/>
+      </div>
       <div>
         <div class="flex space-x-3 items-center">
           <img class="me-img" src="../assets/img/ProfileCircle.png" />
@@ -38,7 +40,9 @@
   </div>
 </template>
 <script>
+import PdThemeToggle from '~/components/PdThemeToggle.vue'
 export default {
+  components: { PdThemeToggle },
   name: 'PersonalDev'
 }
 </script>
@@ -53,14 +57,14 @@ export default {
   min-height: 100vh;
   min-width: 100vw;
   align-items: center;
-  background-color: var(--dark);
+  background-color: var(--background-color);
 }
 
 .title {
   font-family: 'Pacifico', cursive;
   display: block;
-  font-size: 4.7rem;
-  color: #bfbfbf;
+  font-size: 5rem;
+  color: var(--text-color);
 }
 
 .text-lilac {

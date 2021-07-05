@@ -7,7 +7,7 @@
 <style>
 html {
   font-family: 'Red Hat Text', sans-serif;
-  color: var(--off-white);
+  color: var(--text-color);
   font-size: 1.2rem;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -19,8 +19,22 @@ html {
 
 :root {
   --neon-fuchsia: #ca9be0;
-  --dark: #1d1d1d;
-  --off-white: #bfbfbf;
+  --background-color: #1d1d1d;
+  --text-color: #bfbfbf;
+  /* Dark/Light Mode toggle */
+  --black: #333333;
+  --white: #f5f5f5f5;
+  --transition: 0.5s ease;
+}
+
+[data-theme="darkMode"] {
+  --background-color: #1d1d1d;
+  --text-color: #bfbfbf;
+}
+
+[data-theme="lightMode"] {
+  --background-color: #FCFCFC;
+  --text-color: #525252;
 }
 
 *,
@@ -33,7 +47,7 @@ html {
 .button--neon-fuchsia {
   display: inline-block;
   border-radius: 20px;
-  border: 1px solid var(--neon-fuchsia);
+  border: 1.5px solid var(--neon-fuchsia);
   color: var(--neon-fuchsia);
   text-decoration: none;
   padding: 5px 15px;
@@ -41,7 +55,7 @@ html {
 
 .button--neon-fuchsia:hover {
   font-weight: bold;
-  color: var(--dark);
+  color: var(--background-color);
   background-color: var(--neon-fuchsia);
 }
 </style>
