@@ -21,10 +21,6 @@ html {
   --neon-fuchsia: #ca9be0;
   --background-color: #1d1d1d;
   --text-color: #bfbfbf;
-  /* Dark/Light Mode toggle */
-  --black: #333333;
-  --white: #f5f5f5f5;
-  --transition: 0.5s ease;
 }
 
 [data-theme="darkMode"] {
@@ -33,7 +29,7 @@ html {
 }
 
 [data-theme="lightMode"] {
-  --background-color: #FCFCFC;
+  --background-color: #fdfdfd;
   --text-color: #525252;
 }
 
@@ -42,6 +38,13 @@ html {
 *::after {
   box-sizing: border-box;
   margin: 0;
+}
+
+::selection {
+  background: #ca9be062;
+}
+::-moz-selection {
+  background: #ca9be062;
 }
 
 .button--neon-fuchsia {
