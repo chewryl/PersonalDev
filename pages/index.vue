@@ -5,8 +5,8 @@
         <pd-light-dark-toggle/>
       </div>
       <div>
-        <div class="flex space-x-3 items-center">
-          <img class="me-img" src="../assets/img/ProfileCircle.png" />
+        <div class="flex lg:space-x-3 items-center">
+          <img id="profile_img" class="me-img" src="../assets/img/ProfileCircle.png" />
           <h1 class="title">
             <span class="text-lilac"> Cheryl </span>
             Mataitini
@@ -61,6 +61,10 @@ export default {
   background-color: var(--background-color);
 }
 
+h1 {
+	margin: 0px;
+}
+
 .title {
   font-family: 'Pacifico', cursive;
   display: block;
@@ -72,16 +76,18 @@ export default {
   color: var(--neon-fuchsia);
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
 .me-img {
   max-width: 6rem;
   height: 6rem;
+}
+
+@media screen and (max-width: 860px) {
+  #profile_img {
+    visibility: hidden;
+    display: none;
+  }
+	.title {
+		font-size: 4rem;
+	}
 }
 </style>
