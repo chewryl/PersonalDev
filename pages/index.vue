@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="max-w-3xl min-h-screen px-4 py-24 mx-auto">
-      <div class="flex items-right pb-10">
+      <div class="flex justify-end pb-10">
         <pd-light-dark-toggle/>
       </div>
       <div>
