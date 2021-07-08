@@ -90,4 +90,10 @@ h1 {
 		font-size: 4rem;
 	}
 }
+
+@media screen and (max-width: 425px) {
+	.title {
+		font-size: 3.5rem;
+	}
+}
 </style>
