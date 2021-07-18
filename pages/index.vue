@@ -6,7 +6,7 @@
       </div>
       <div>
         <div class="flex lg:space-x-3 items-center">
-          <img id="profile_img" class="me-img" src="../assets/img/ProfileCircle.png" />
+          <img id="profile_img" class="me-img" src="../assets/img/Profile.jpg" />
           <h1 class="title">
             <span class="text-lilac"> Cheryl </span>
             Mataitini
@@ -15,12 +15,11 @@
         <div class="pt-10 space-y-4">
           <p>
             Software Engineer based in the UK. Focused on C# .NET / ASP.NET Core
-            development & client-side frameworks. Check out my GitHub profile to
+            development & client-side frameworks. Check out my GitHub to
             see what projects I am working on.
           </p>
           <p>
-            In my free time, I enjoy spending time on music & clay work. At the
-            moment I am learning to play the classical guitar.
+            Other than programming, I enjoy spending time on music & clay work. At the moment I am learning to play the classical guitar.
           </p>
         </div>
         <div class="flex gap-1 pt-10">
@@ -79,6 +78,8 @@ h1 {
 .me-img {
   max-width: 6rem;
   height: 6rem;
+	border-radius: 50%;
+	border: 1.6px solid #ca9be0ad;
 }
 
 @media screen and (max-width: 860px) {
