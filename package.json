@@ -29,8 +29,5 @@
     "singleQuote": true,
     "semi": false,
     "trailingComma": "none"
-  },
-	"volta": {
-		"node": "16.15.0"
-	}
+  }
 }
