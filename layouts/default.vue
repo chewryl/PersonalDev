@@ -6,7 +6,7 @@
 
 <style>
 html {
-  font-family: 'Red Hat Text', sans-serif;
+  font-family: Times, serif;
   color: var(--text-color);
   font-size: 1.2rem;
   word-spacing: 1px;
@@ -18,8 +18,9 @@ html {
 }
 
 :root {
-  --neon-fuchsia: #ca9be0;
-  --background-color: #1d1d1d;
+  --highlight: #ca9be0;
+	--highlight: #9e7e1c;
+  --background-color: #252321;
   --text-color: #bfbfbf;
 }
 
@@ -29,7 +30,7 @@ html {
 }
 
 [data-theme="lightMode"] {
-  --background-color: #fdfdfd;
+  --background-color: #fefefe;
   --text-color: #525252;
 }
 
@@ -47,18 +48,18 @@ html {
   background: #ca9be062;
 }
 
-.button--neon-fuchsia {
+.button--highlight {
   display: inline-block;
   border-radius: 20px;
-  border: 1.5px solid var(--neon-fuchsia);
-  color: var(--neon-fuchsia);
+  border: 1.5px solid var(--highlight);
+  color: var(--highlight);
   text-decoration: none;
   padding: 5px 15px;
 }
 
-.button--neon-fuchsia:hover {
+.button--highlight:hover {
   font-weight: bold;
   color: var(--background-color);
-  background-color: var(--neon-fuchsia);
+  background-color: var(--highlight);
 }
 </style>

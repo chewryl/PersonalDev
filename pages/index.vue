@@ -1,33 +1,29 @@
 <template>
   <div class="container">
-    <div class="max-w-3xl min-h-screen px-4 py-24 mx-auto">
+    <div class="max-w-3xl min-h-screen px-4 py-20 mx-auto">
       <div class="flex justify-end pb-10">
-        <pd-light-dark-toggle/>
+        <pd-light-dark-toggle />
       </div>
       <div>
-        <div class="flex lg:space-x-3 items-center">
-          <img id="profile_img" class="me-img" src="../assets/img/Profile.jpg" />
-          <h1 class="title">
-            <span class="text-lilac"> Cheryl </span>
+        <div class="flex lg:space-x-3 items-center title-section">
+          <h1>
+            <span class="text-highlight"> Cheryl </span>
             Mataitini
           </h1>
         </div>
         <div class="pt-10 space-y-4">
           <p>
-            Software Engineer based in the UK. Focused on C# .NET / ASP.NET Core
-            development & client-side frameworks. Check out my GitHub to
-            see what projects I am working on.
+            Software Engineer based in the UK.
           </p>
-          <p>
-            Other than programming, I enjoy spending time on music & clay work. At the moment I am learning to play the classical guitar.
-          </p>
+					<p>
+						Experience with:
+					</p>
+					<ul>
+						<li>JavaScript & frameworks including Vue JS</li>
+						<li>C# (.NET Framework & .NET Core)</li>
+					</ul>
         </div>
         <div class="flex gap-1 pt-10">
-          <pd-button
-            href="mailto:cherylmataitini@gmail.com"
-            text="Contact"
-            icon-path="Email.svg"
-          />
           <pd-button
             href="https://github.com/chewryl/"
             text="GitHub"
@@ -42,8 +38,8 @@
 import PdLightDarkToggle from '~/components/PdLightDarkToggle.vue'
 
 export default {
-  components: { PdLightDarkToggle },
-  name: 'PersonalDev'
+  name: 'PersonalDev',
+  components: { PdLightDarkToggle }
 }
 </script>
 <style>
@@ -60,26 +56,44 @@ export default {
   background-color: var(--background-color);
 }
 
+.container p {
+	font-size: 1.2rem;
+}
+
 h1 {
 	margin: 0px;
 }
 
-.title {
-  font-family: 'Pacifico', cursive;
+ol, ul {
+	list-style: circle;
+	display: block;
+	margin-top: 1em;
+	margin-bottom: 1 em;
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 40px;
+}
+
+.title-section {
+	border-bottom: 1px solid #6d5612;
+}
+
+.title-section h1 {
+	font-family: Times, serif;
   display: block;
   font-size: 5rem;
   color: var(--text-color);
 }
 
-.text-lilac {
-  color: var(--neon-fuchsia);
+.text-highlight {
+  color: var(--highlight);
 }
 
 .me-img {
   max-width: 6rem;
   height: 6rem;
 	border-radius: 50%;
-	border: 1.6px solid #ca9be0ad;
+	border: 1.6px solid var(--highlight);
 }
 
 @media screen and (max-width: 860px) {

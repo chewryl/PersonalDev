@@ -17,6 +17,7 @@ module.exports = {
     "quotes": [2, "single", { "avoidEscape": true }],
     //"indent": [2, "tab"],
 		'indent': 'off',
-    "no-tabs": 0
+		"no-tabs": 0,
+		"space-before-function-paren": ["error", "never"]
   }
 }
