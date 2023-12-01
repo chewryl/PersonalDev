@@ -54,8 +54,8 @@ export default {
 */
 .container {
   margin: 0 auto;
-  min-height: 100vh;
-  min-width: 100vw;
+  min-height: 100%;
+  min-width: 100%;
   align-items: center;
   background-color: var(--background-color);
 }
