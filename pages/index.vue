@@ -6,21 +6,21 @@
       </div>
       <div>
         <div class="flex lg:space-x-3 items-center title-section">
-          <h1>
+          <h1 class="font-bold">
             <span class="text-highlight"> Cheryl </span>
             Mataitini
           </h1>
         </div>
         <div class="pt-10 space-y-4">
           <p>
-            Software Engineer based in the UK.
+            Software Developer based in the UK.
           </p>
 					<p>
 						Experience with:
 					</p>
 					<ul>
 						<li>JavaScript & frameworks including Vue JS</li>
-						<li>C# (.NET Framework & .NET Core)</li>
+						<li>C# ASP.NET</li>
 					</ul>
         </div>
         <div class="flex gap-1 pt-10">
@@ -30,16 +30,20 @@
             icon-path="GitHub.svg"
           />
         </div>
+				<div class="pt-10 space-y-4">
+					<github-activity />
+				</div>
       </div>
     </div>
   </div>
 </template>
 <script>
 import PdLightDarkToggle from '~/components/PdLightDarkToggle.vue'
+import GithubActivity from '~/components/GithubActivity.vue'
 
 export default {
   name: 'PersonalDev',
-  components: { PdLightDarkToggle }
+  components: { PdLightDarkToggle, GithubActivity }
 }
 </script>
 <style>
@@ -54,14 +58,6 @@ export default {
   min-width: 100vw;
   align-items: center;
   background-color: var(--background-color);
-}
-
-.container p {
-	font-size: 1.2rem;
-}
-
-h1 {
-	margin: 0px;
 }
 
 ol, ul {
@@ -81,12 +77,8 @@ ol, ul {
 .title-section h1 {
 	font-family: Times, serif;
   display: block;
-  font-size: 5rem;
+  font-size: 2.5rem;
   color: var(--text-color);
-}
-
-.text-highlight {
-  color: var(--highlight);
 }
 
 .me-img {
@@ -101,8 +93,8 @@ ol, ul {
     visibility: hidden;
     display: none;
   }
-	.title {
-		font-size: 4rem;
+	.title-section h1 {
+		font-size: 3rem;
 	}
 }
 
