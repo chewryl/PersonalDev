@@ -19,8 +19,8 @@
 						Experience with:
 					</p>
 					<ul>
-						<li>JavaScript & frameworks including Vue JS</li>
-						<li>C# ASP.NET</li>
+						<li>C# ASP.NET Core</li>
+						<li>JavaScript & frameworks including Vue.js</li>
 					</ul>
         </div>
         <div class="flex gap-1 pt-10">

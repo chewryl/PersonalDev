@@ -55,7 +55,7 @@ export default {
 
 <style scoped>
 .item-container {
-	border-bottom: solid 3px var(--background-color);
+	margin-bottom: 3px;
 }
 .link {
 	text-decoration: underline;
@@ -64,7 +64,7 @@ ol, ul {
 	list-style: none;
 	display: block;
 	margin: 0;
-	overflow: auto;
+	overflow-y: auto;
 }
 .icon {
 	fill: var(--text-color);

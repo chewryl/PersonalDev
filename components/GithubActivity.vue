@@ -3,7 +3,6 @@
 		<h4 class="my-3 tracking-wide font-bold">Recent GitHub Activity</h4>
 		<div class="activity-container overflow-y-auto h-64">
 			<GithubActivityItem v-for="commit in commits" :key="commit.id" :commit="commit" :repo="commit.repo.name"/>
-			...
 		</div>
 	</div>
 </template>
@@ -46,5 +45,24 @@ export default {
 <style>
 .activity-container div {
 	background-color: var(--container-color);
+}
+
+.activity-container::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+.activity-container::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+	margin-bottom: 3px;
+}
+
+/* Handle */
+.activity-container::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+}
+
+.activity-container::-webkit-scrollbar {
+	height: 0px; /* If value is 0px, the horizontal bar will disappear but still works*/
 }
 </style>

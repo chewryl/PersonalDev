@@ -23,18 +23,23 @@ html {
   --background-color: #252321;
   --text-color: #bfbfbf;
 	--container-color: #322e2e;
+	--scrollbar-track: #1e1c1b;
+	--scrollbar-thumb: #444141;
 }
 
 [data-theme="darkMode"] {
   --background-color: #1d1d1d;
   --text-color: #bfbfbf;
-	--container-color: #322e2e;
+	--scrollbar-track: #1e1c1b;
+	--scrollbar-thumb: #444141;
 }
 
 [data-theme="lightMode"] {
   --background-color: #fef0e9;
   --text-color: #525252;
 	--container-color: #ededed;
+	--scrollbar-track: #f7eae4;
+	--scrollbar-thumb: #d8d8d8;
 }
 *,
 *::before,
