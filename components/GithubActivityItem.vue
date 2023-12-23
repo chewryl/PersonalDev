@@ -9,12 +9,12 @@
 					height="20"
 				/>
 			</span>
-			<p class="text-sm">{{ user }} pushed commit to
+			<p class="text-sm">{{ event.commits.length }} {{ commitsText }} pushed to
 				<a :href="repoLink" target=”_blank” class="text-highlight-two link">{{ repo }}</a>
 				on {{ createdAt }}</p>
 		</div>
-		<ul>
-			<li class="text-sm">"{{ message  }}"</li>
+		<ul v-for="commit in event.commits" :key="commit.sha">
+			<li class="text-sm">"{{ commit.message }}"</li>
 		</ul>
 	</div>
 </template>
@@ -26,7 +26,7 @@ export default {
 	name: 'GithubActivityItem',
 	components: { InlineSvg },
 	props: {
-		commit: {
+		event: {
 			type: Object,
 			required: true
 		},
@@ -40,14 +40,11 @@ export default {
 			return 'https://github.com/' + this.repo
 		},
 		createdAt() {
-			const date = new Date(this.commit.created_at)
-			return date.toLocaleString()
+			const date = new Date(this.event.created_at)
+			return date.toLocaleDateString()
 		},
-		user() {
-			return this.commit.payload.commits[0].author.name
-		},
-		message() {
-			return this.commit.payload.commits[0].message
+		commitsText() {
+			return this.event.commits.length === 1 ? 'commit' : 'commits'
 		}
 	}
 }

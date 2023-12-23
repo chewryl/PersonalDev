@@ -1,8 +1,8 @@
 <template>
-	<div v-if="!error && commits.length" class="activity">
+	<div v-if="!error && pushEvents.length" class="activity">
 		<h4 class="my-3 tracking-wide font-bold">Recent GitHub Activity</h4>
 		<div class="activity-container overflow-y-auto h-64">
-			<GithubActivityItem v-for="commit in commits" :key="commit.id" :commit="commit" :repo="commit.repo.name"/>
+			<GithubActivityItem v-for="event in pushEvents" :key="event.id" :event="event" :repo="event.repoName"/>
 		</div>
 	</div>
 </template>
@@ -18,7 +18,7 @@ export default {
 	data() {
 		return {
 			error: null,
-			commits: []
+			pushEvents: []
 		}
 	},
 	async mounted() {
@@ -32,7 +32,16 @@ export default {
 			})
 			const data = await results.json()
 			if (data !== null && data.length) {
-				this.commits = data.filter(event => event.type === 'PushEvent')
+				const pushEvents = data.filter(event => event.type === 'PushEvent')
+					.map((event) => {
+						return {
+							id: event.id,
+							repoName: event.repo.name,
+							created_at: event.created_at,
+							commits: [...event.payload.commits]
+						}
+					})
+				this.pushEvents = pushEvents
 			}
 		} catch (err) {
 			console.log(err)
