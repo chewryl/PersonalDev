@@ -6,33 +6,28 @@
       </div>
       <div>
         <div class="flex lg:space-x-3 items-center title-section">
-          <h1 class="font-bold">
+          <h1 class="font-semibold">
             <span class="text-highlight"> Cheryl </span>
             Mataitini
           </h1>
         </div>
         <div class="pt-10 space-y-4">
           <p>
-            Software Developer based in the UK.
+            Software Engineer.
           </p>
-					<p>
-						Experience with:
-					</p>
-					<ul>
-						<li>C# ASP.NET Core</li>
-						<li>JavaScript & frameworks including Vue.js</li>
-					</ul>
+
+          <p>
+            Specialities: C# .NET, JavaScript and front-end frameworks (React
+            and Vue), Azure, DevOps methodologies and tools.
+          </p>
         </div>
-        <div class="flex gap-1 pt-10">
-          <pd-button
-            href="https://github.com/chewryl/"
-            text="GitHub"
-            icon-path="GitHub.svg"
-          />
+        <div class="flex gap-2 pt-10">
+          <pd-button href="https://dev.to/chewryl/" text="Dev.to Blog" />
+          <pd-button href="https://github.com/chewryl/" text="GitHub" />
         </div>
-				<div class="pt-10 space-y-4">
-					<github-activity />
-				</div>
+        <div class="pt-10 space-y-4">
+          <github-activity />
+        </div>
       </div>
     </div>
   </div>
@@ -60,32 +55,33 @@ export default {
   background-color: var(--background-color);
 }
 
-ol, ul {
-	list-style: circle;
-	display: block;
-	margin-top: 1em;
-	margin-bottom: 1 em;
-	margin-left: 0;
-	margin-right: 0;
-	padding-left: 40px;
+ol,
+ul {
+  list-style: circle;
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1 em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
 }
 
 .title-section {
-	border-bottom: 1px solid #6d5612;
+  border-bottom: 1px solid #6d5612;
 }
 
 .title-section h1 {
-	font-family: Times, serif;
+  font-family: Arial, Helvetica, sans-serif, sans-serif;
   display: block;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   color: var(--text-color);
 }
 
 .me-img {
   max-width: 6rem;
   height: 6rem;
-	border-radius: 50%;
-	border: 1.6px solid var(--highlight);
+  border-radius: 50%;
+  border: 1px solid var(--highlight);
 }
 
 @media screen and (max-width: 860px) {
@@ -93,14 +89,11 @@ ol, ul {
     visibility: hidden;
     display: none;
   }
-	.title-section h1 {
-		font-size: 3rem;
-	}
 }
 
 @media screen and (max-width: 425px) {
-	.title {
-		font-size: 3.5rem;
-	}
+  .title {
+    font-size: 3.5rem;
+  }
 }
 </style>

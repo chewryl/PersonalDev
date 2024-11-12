@@ -7,17 +7,14 @@ module.exports = {
   parserOptions: {
     parser: 'babel-eslint'
   },
-  extends: [
-    '@nuxtjs',
-    'plugin:nuxt/recommended'
-  ],
-  plugins: [
-  ],
-  "rules": {
-    "quotes": [2, "single", { "avoidEscape": true }],
+  extends: ['@nuxtjs', 'plugin:nuxt/recommended'],
+  plugins: [],
+  rules: {
+    quotes: [2, 'single', { avoidEscape: true }],
     //"indent": [2, "tab"],
-		'indent': 'off',
-		"no-tabs": 0,
-		"space-before-function-paren": ["error", "never"]
+    indent: 'off',
+    'no-tabs': 0,
+    'space-before-function-paren': ['error', 'never'],
+    'arrow-parens': 0
   }
 }

@@ -56,8 +56,7 @@ export default {
   height: 22;
 }
 
-a:hover .icon,
-a:hover {
+a:hover .icon {
   fill: var(--background-color);
   color: var(--background-color);
 }
