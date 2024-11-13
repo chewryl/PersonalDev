@@ -1,12 +1,12 @@
 <template>
-  <div class="py-2 px-3 item-container item">
-    <p class="text-sm">
-      <span class="font-bold">{{ item.title }}.</span> Published on:
-      {{ formatDate(item.published_timestamp) }}
+  <div class="p-6 item-container item">
+    <p class="text-sm font-bold">{{ item.title }}.</p>
+    <p class="text-sm darken">
+      Published on: {{ formatDate(item.published_timestamp) }}
     </p>
 
     <div>
-      <p class="text-sm">
+      <p class="text-sm mt-4">
         {{ trimStart(item.description, item.title) }}
         <a
           :href="item.canonical_url"
@@ -48,7 +48,7 @@ export default {
 
 <style scoped>
 .item {
-  margin-bottom: 3px;
+  margin-bottom: 4px;
 }
 .darken {
   color: var(--text-color-secondary);

@@ -37,21 +37,17 @@
           <blog-activity />
         </div>
       </div>
-        <div class="pt-10 space-y-4">
-          <github-activity />
-        </div>
       </div>
     </div>
   </div>
 </template>
 <script>
 import PdLightDarkToggle from '~/components/PdLightDarkToggle.vue'
-import GithubActivity from '~/components/GithubActivity.vue'
 import BlogActivity from '~/components/BlogActivity.vue'
 
 export default {
   name: 'PersonalDev',
-  components: { PdLightDarkToggle, GithubActivity, BlogActivity }
+  components: { PdLightDarkToggle, BlogActivity }
 }
 </script>
 <style>

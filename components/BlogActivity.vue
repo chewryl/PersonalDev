@@ -1,6 +1,6 @@
 <template>
   <div v-if="!error && items.length" class="activity">
-    <h4 class="my-3 tracking-wide font-semibold">Blog Posts</h4>
+    <h4 class="tracking-wide font-semibold mb-2">Blog Posts</h4>
     <div class="activity-container overflow-y-auto max-h-64">
       <BlogActivityItem v-for="item in items" :key="item.id" :item="item" />
     </div>
