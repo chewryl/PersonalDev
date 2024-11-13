@@ -18,7 +18,7 @@
 
           <p>
             Specialities: C# .NET, JavaScript and front-end frameworks (React
-            and Vue), Azure, DevOps methodologies and tools.
+            and Vue), Azure.
           </p>
         </div>
         <div class="flex gap-6 w-full mt-10">
@@ -34,6 +34,10 @@
           />
         </div>
         <div class="pt-10 space-y-4">
+          <blog-activity />
+        </div>
+      </div>
+        <div class="pt-10 space-y-4">
           <github-activity />
         </div>
       </div>
@@ -43,10 +47,11 @@
 <script>
 import PdLightDarkToggle from '~/components/PdLightDarkToggle.vue'
 import GithubActivity from '~/components/GithubActivity.vue'
+import BlogActivity from '~/components/BlogActivity.vue'
 
 export default {
   name: 'PersonalDev',
-  components: { PdLightDarkToggle, GithubActivity }
+  components: { PdLightDarkToggle, GithubActivity, BlogActivity }
 }
 </script>
 <style>

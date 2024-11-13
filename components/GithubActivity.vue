@@ -1,6 +1,6 @@
 <template>
   <div v-if="!error && pushEvents.length" class="activity">
-    <h4 class="my-3 tracking-wide font-semibold">Recent GitHub Activity</h4>
+    <h4 class="my-3 tracking-wide font-semibold">GitHub Activity</h4>
     <div class="activity-container overflow-y-auto h-64">
       <GithubActivityItem
         v-for="event in pushEvents"

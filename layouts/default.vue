@@ -25,6 +25,7 @@ html {
   --container-color: #322e2e;
   --scrollbar-track: #1e1c1b;
   --scrollbar-thumb: #444141;
+  --text-color-secondary: #9a9a9a;
 }
 
 [data-theme='darkMode'] {
@@ -32,6 +33,7 @@ html {
   --text-color: #bfbfbf;
   --scrollbar-track: #1e1c1b;
   --scrollbar-thumb: #444141;
+  --text-color-secondary: #9a9a9a;
 }
 
 [data-theme='lightMode'] {
@@ -40,6 +42,7 @@ html {
   --container-color: #ededed;
   --scrollbar-track: #f7eae4;
   --scrollbar-thumb: #d8d8d8;
+  --text-color-secondary: #8a8a8a;
 }
 *,
 *::before,
