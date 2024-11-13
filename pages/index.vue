@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="max-w-3xl min-h-screen px-4 py-20 mx-auto">
+    <div class="max-w-3xl min-h-screen px-4 py-16 mx-auto">
       <div class="flex justify-end pb-10">
         <pd-light-dark-toggle />
       </div>

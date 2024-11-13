@@ -3,8 +3,8 @@
     v-if="iconPath"
     :src="require(`../assets/icons/${iconPath}`)"
     class="icon"
-    width="22"
-    height="22"
+    width="20"
+    height="20"
     @click="toggleTheme"
   />
 </template>
