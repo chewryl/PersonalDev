@@ -57,7 +57,6 @@ export default {
 }
 
 a:hover .icon {
-  fill: var(--background-color);
-  color: var(--background-color);
+  filter: brightness(90%);
 }
 </style>

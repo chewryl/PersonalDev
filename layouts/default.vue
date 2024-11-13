@@ -35,7 +35,7 @@ html {
 }
 
 [data-theme='lightMode'] {
-  --background-color: #efddce;
+  --background-color: #fbf4ee;
   --text-color: #525252;
   --container-color: #ededed;
   --scrollbar-track: #f7eae4;
@@ -65,16 +65,15 @@ html {
 
 .button--highlight {
   display: inline-block;
-  border-radius: 20px;
-  border: 1px solid var(--highlight);
+  /* border-radius: 20px;
+  border: 1px solid var(--highlight); */
   color: var(--highlight);
   text-decoration: none;
-  padding: 5px 15px;
+  /* padding: 5px 15px; */
   font-weight: 600;
 }
 
 .button--highlight:hover {
-  color: var(--background-color);
-  background-color: var(--highlight);
+  filter: brightness(90%);
 }
 </style>

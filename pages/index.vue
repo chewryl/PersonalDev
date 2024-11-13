@@ -21,9 +21,17 @@
             and Vue), Azure, DevOps methodologies and tools.
           </p>
         </div>
-        <div class="flex gap-2 pt-10">
-          <pd-button href="https://dev.to/chewryl/" text="Dev.to Blog" />
-          <pd-button href="https://github.com/chewryl/" text="GitHub" />
+        <div class="flex gap-6 w-full mt-10">
+          <pd-button
+            iconPath="Dev.svg"
+            href="https://dev.to/chewryl/"
+            text="Dev.to Blog"
+          />
+          <pd-button
+            iconPath="GitHub.svg"
+            href="https://github.com/chewryl/"
+            text="GitHub"
+          />
         </div>
         <div class="pt-10 space-y-4">
           <github-activity />
@@ -71,9 +79,9 @@ ul {
 }
 
 .title-section h1 {
-  font-family: Arial, Helvetica, sans-serif, sans-serif;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
   display: block;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: var(--text-color);
 }
 
