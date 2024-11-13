@@ -18,7 +18,7 @@
 
           <p>
             Specialities: C# .NET, JavaScript and front-end frameworks (React
-            and Vue), Azure.
+            and Vue), Azure, DevOps methodologies and tools.
           </p>
         </div>
         <div class="flex gap-6 w-full mt-10">
