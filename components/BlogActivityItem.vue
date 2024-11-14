@@ -1,6 +1,6 @@
 <template>
   <div class="p-6 item-container item">
-    <p class="text-sm font-bold">{{ item.title }}.</p>
+    <p class="text-md font-bold">{{ item.title }}.</p>
     <p class="text-sm darken">
       Published on: {{ formatDate(item.published_timestamp) }}
     </p>

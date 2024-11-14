@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="max-w-3xl min-h-screen px-4 py-16 mx-auto">
+    <div class="max-w-3xl min-h-screen px-4 py-20 md:py-24 mx-auto">
       <div class="flex justify-end pb-10">
         <pd-light-dark-toggle />
       </div>
@@ -11,7 +11,7 @@
             Mataitini
           </h1>
         </div>
-        <div class="pt-10 space-y-4">
+        <div class="pt-10 space-y-4 text-md">
           <p>
             Software Engineer.
           </p>
