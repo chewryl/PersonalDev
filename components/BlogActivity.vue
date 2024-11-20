@@ -1,7 +1,7 @@
 <template>
   <div v-if="!error && items.length" class="activity">
     <h4 class="tracking-wide font-semibold mb-2 text-md">Blog Posts</h4>
-    <div class="activity-container overflow-y-auto max-h-72">
+    <div class="activity-container overflow-y-auto max-h-80">
       <BlogActivityItem v-for="item in items" :key="item.id" :item="item" />
     </div>
   </div>
