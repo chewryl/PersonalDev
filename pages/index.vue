@@ -17,26 +17,27 @@
           </p>
 
           <p>
-            Specialities: C# .NET, JavaScript and front-end frameworks (React
-            and Vue), Azure, DevOps methodologies and tools.
+            Experienced in C# .NET, JavaScript and frameworks (React.js,
+            Vue.js), and cloud platforms including AWS. Committed to writing
+            clean, scalable code and interested in exploring DevOps tools and
+            system design
           </p>
         </div>
         <div class="flex gap-6 w-full mt-10">
           <pd-button
-            iconPath="Dev.svg"
+            icon-path="Dev.svg"
             href="https://dev.to/chewryl/"
             text="Dev.to Blog"
           />
           <pd-button
-            iconPath="GitHub.svg"
-            href="https://github.com/chewryl/"
-            text="GitHub"
+            icon-path="LinkedIn.svg"
+            href="https://www.linkedin.com/in/cheryl-mataitini-566a812b4/"
+            text="LinkedIn"
           />
         </div>
         <div class="pt-10 space-y-4">
           <blog-activity />
         </div>
-      </div>
       </div>
     </div>
   </div>

@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Cheryl Mataitini - Software Developer',
+    title: 'Cheryl Mataitini - Software Engineer',
     htmlAttrs: {
       lang: 'en'
     },
