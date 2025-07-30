@@ -18,9 +18,7 @@
 
           <p>
             Experienced in C# .NET, JavaScript and frameworks (React.js,
-            Vue.js), and cloud platforms including AWS. Committed to writing
-            clean, scalable code and interested in exploring DevOps tools and
-            system design
+            Vue.js), and cloud platforms including AWS.
           </p>
         </div>
         <div class="flex gap-6 w-full mt-10">
